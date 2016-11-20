@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		509BD401825A06B57DE557B6 /* libPods-FduVision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CECA11D967990A20F8E1D455 /* libPods-FduVision.a */; };
 		51757F4D1DC4FDD1006B5502 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51757F4C1DC4FDD1006B5502 /* main.m */; };
-		51757F501DC4FDD1006B5502 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51757F4F1DC4FDD1006B5502 /* AppDelegate.m */; };
-		51757F531DC4FDD1006B5502 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51757F521DC4FDD1006B5502 /* ViewController.m */; };
+		51757F501DC4FDD1006B5502 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51757F4F1DC4FDD1006B5502 /* AppDelegate.mm */; };
+		51757F531DC4FDD1006B5502 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51757F521DC4FDD1006B5502 /* ViewController.mm */; };
 		51757F561DC4FDD1006B5502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51757F541DC4FDD1006B5502 /* Main.storyboard */; };
 		51757F581DC4FDD1006B5502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51757F571DC4FDD1006B5502 /* Assets.xcassets */; };
 		51757F5B1DC4FDD1006B5502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51757F591DC4FDD1006B5502 /* LaunchScreen.storyboard */; };
 		51757F661DC4FDD2006B5502 /* FduVisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51757F651DC4FDD2006B5502 /* FduVisionTests.m */; };
 		51757F711DC4FDD2006B5502 /* FduVisionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51757F701DC4FDD2006B5502 /* FduVisionUITests.m */; };
+		51757F7F1DC508E4006B5502 /* ar.cc in Sources */ = {isa = PBXBuildFile; fileRef = 51757F7E1DC508E4006B5502 /* ar.cc */; };
+		51757F851DC508F1006B5502 /* OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51757F821DC508F1006B5502 /* OpenGLView.mm */; };
+		51757F861DC508F1006B5502 /* renderer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 51757F831DC508F1006B5502 /* renderer.cc */; };
+		51757F881DC509BF006B5502 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F871DC509BF006B5502 /* UIKit.framework */; };
+		51757F8A1DC509C6006B5502 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F891DC509C6006B5502 /* QuartzCore.framework */; };
+		51757F8C1DC509D0006B5502 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F8B1DC509D0006B5502 /* OpenGLES.framework */; };
+		51757F8E1DC509D6006B5502 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F8D1DC509D6006B5502 /* CoreVideo.framework */; };
+		51757F901DC509DF006B5502 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F8F1DC509DF006B5502 /* CoreImage.framework */; };
+		51757F921DC509EB006B5502 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F911DC509EB006B5502 /* CoreMedia.framework */; };
+		51757F941DC509F2006B5502 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F931DC509F2006B5502 /* CoreGraphics.framework */; };
+		51757F961DC509F9006B5502 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F951DC509F9006B5502 /* AVFoundation.framework */; };
+		51757F981DC50A17006B5502 /* easyar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F971DC50A17006B5502 /* easyar.framework */; };
+		51757F9E1DC50FEE006B5502 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51757F9D1DC50FEE006B5502 /* 1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2033D1447E2B845855ECC428 /* Pods-FduVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FduVision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FduVision/Pods-FduVision.debug.xcconfig"; sourceTree = "<group>"; };
 		51757F481DC4FDD1006B5502 /* FduVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FduVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51757F4C1DC4FDD1006B5502 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51757F4E1DC4FDD1006B5502 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		51757F4F1DC4FDD1006B5502 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		51757F4F1DC4FDD1006B5502 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		51757F511DC4FDD1006B5502 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		51757F521DC4FDD1006B5502 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		51757F521DC4FDD1006B5502 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		51757F551DC4FDD1006B5502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51757F571DC4FDD1006B5502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51757F5A1DC4FDD1006B5502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +66,24 @@
 		51757F6C1DC4FDD2006B5502 /* FduVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FduVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51757F701DC4FDD2006B5502 /* FduVisionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FduVisionUITests.m; sourceTree = "<group>"; };
 		51757F721DC4FDD2006B5502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51757F7E1DC508E4006B5502 /* ar.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ar.cc; sourceTree = "<group>"; };
+		51757F801DC508F1006B5502 /* ar.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ar.hpp; sourceTree = "<group>"; };
+		51757F811DC508F1006B5502 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		51757F821DC508F1006B5502 /* OpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLView.mm; sourceTree = "<group>"; };
+		51757F831DC508F1006B5502 /* renderer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = renderer.cc; sourceTree = "<group>"; };
+		51757F841DC508F1006B5502 /* renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = renderer.hpp; sourceTree = "<group>"; };
+		51757F871DC509BF006B5502 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		51757F891DC509C6006B5502 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		51757F8B1DC509D0006B5502 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		51757F8D1DC509D6006B5502 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		51757F8F1DC509DF006B5502 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		51757F911DC509EB006B5502 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		51757F931DC509F2006B5502 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		51757F951DC509F9006B5502 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		51757F971DC50A17006B5502 /* easyar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = easyar.framework; path = FduVision/easyar.framework; sourceTree = "<group>"; };
+		51757F9D1DC50FEE006B5502 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = SOURCE_ROOT; };
+		CECA11D967990A20F8E1D455 /* libPods-FduVision.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FduVision.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3080B648F7719CF56F01548 /* Pods-FduVision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FduVision.release.xcconfig"; path = "Pods/Target Support Files/Pods-FduVision/Pods-FduVision.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +91,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51757F981DC50A17006B5502 /* easyar.framework in Frameworks */,
+				51757F961DC509F9006B5502 /* AVFoundation.framework in Frameworks */,
+				51757F941DC509F2006B5502 /* CoreGraphics.framework in Frameworks */,
+				51757F921DC509EB006B5502 /* CoreMedia.framework in Frameworks */,
+				51757F901DC509DF006B5502 /* CoreImage.framework in Frameworks */,
+				51757F8E1DC509D6006B5502 /* CoreVideo.framework in Frameworks */,
+				51757F8C1DC509D0006B5502 /* OpenGLES.framework in Frameworks */,
+				51757F8A1DC509C6006B5502 /* QuartzCore.framework in Frameworks */,
+				51757F881DC509BF006B5502 /* UIKit.framework in Frameworks */,
+				509BD401825A06B57DE557B6 /* libPods-FduVision.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +128,8 @@
 				51757F641DC4FDD2006B5502 /* FduVisionTests */,
 				51757F6F1DC4FDD2006B5502 /* FduVisionUITests */,
 				51757F491DC4FDD1006B5502 /* Products */,
+				6248D398F7CD14F82E6468D1 /* Pods */,
+				B54D565762563F5ED2EE111A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +146,17 @@
 		51757F4A1DC4FDD1006B5502 /* FduVision */ = {
 			isa = PBXGroup;
 			children = (
+				51757F9D1DC50FEE006B5502 /* 1.jpg */,
+				51757F801DC508F1006B5502 /* ar.hpp */,
+				51757F7E1DC508E4006B5502 /* ar.cc */,
+				51757F841DC508F1006B5502 /* renderer.hpp */,
+				51757F831DC508F1006B5502 /* renderer.cc */,
+				51757F811DC508F1006B5502 /* OpenGLView.h */,
+				51757F821DC508F1006B5502 /* OpenGLView.mm */,
 				51757F4E1DC4FDD1006B5502 /* AppDelegate.h */,
-				51757F4F1DC4FDD1006B5502 /* AppDelegate.m */,
+				51757F4F1DC4FDD1006B5502 /* AppDelegate.mm */,
 				51757F511DC4FDD1006B5502 /* ViewController.h */,
-				51757F521DC4FDD1006B5502 /* ViewController.m */,
+				51757F521DC4FDD1006B5502 /* ViewController.mm */,
 				51757F541DC4FDD1006B5502 /* Main.storyboard */,
 				51757F571DC4FDD1006B5502 /* Assets.xcassets */,
 				51757F591DC4FDD1006B5502 /* LaunchScreen.storyboard */,
@@ -140,6 +192,32 @@
 			path = FduVisionUITests;
 			sourceTree = "<group>";
 		};
+		6248D398F7CD14F82E6468D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2033D1447E2B845855ECC428 /* Pods-FduVision.debug.xcconfig */,
+				D3080B648F7719CF56F01548 /* Pods-FduVision.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B54D565762563F5ED2EE111A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51757F971DC50A17006B5502 /* easyar.framework */,
+				51757F951DC509F9006B5502 /* AVFoundation.framework */,
+				51757F931DC509F2006B5502 /* CoreGraphics.framework */,
+				51757F911DC509EB006B5502 /* CoreMedia.framework */,
+				51757F8F1DC509DF006B5502 /* CoreImage.framework */,
+				51757F8D1DC509D6006B5502 /* CoreVideo.framework */,
+				51757F8B1DC509D0006B5502 /* OpenGLES.framework */,
+				51757F891DC509C6006B5502 /* QuartzCore.framework */,
+				51757F871DC509BF006B5502 /* UIKit.framework */,
+				CECA11D967990A20F8E1D455 /* libPods-FduVision.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51757F751DC4FDD2006B5502 /* Build configuration list for PBXNativeTarget "FduVision" */;
 			buildPhases = (
+				CF26FCAF727519E89AB36134 /* [CP] Check Pods Manifest.lock */,
 				51757F441DC4FDD1006B5502 /* Sources */,
 				51757F451DC4FDD1006B5502 /* Frameworks */,
 				51757F461DC4FDD1006B5502 /* Resources */,
+				646CCD5A2E4C95757F6372B6 /* [CP] Embed Pods Frameworks */,
+				04ECDEE42F4C46CA34994885 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +288,7 @@
 				TargetAttributes = {
 					51757F471DC4FDD1006B5502 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K2L6426X8X;
 						ProvisioningStyle = Automatic;
 					};
 					51757F601DC4FDD2006B5502 = {
@@ -247,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51757F5B1DC4FDD1006B5502 /* LaunchScreen.storyboard in Resources */,
+				51757F9E1DC50FEE006B5502 /* 1.jpg in Resources */,
 				51757F581DC4FDD1006B5502 /* Assets.xcassets in Resources */,
 				51757F561DC4FDD1006B5502 /* Main.storyboard in Resources */,
 			);
@@ -268,13 +351,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04ECDEE42F4C46CA34994885 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FduVision/Pods-FduVision-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		646CCD5A2E4C95757F6372B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FduVision/Pods-FduVision-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF26FCAF727519E89AB36134 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51757F441DC4FDD1006B5502 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51757F531DC4FDD1006B5502 /* ViewController.m in Sources */,
-				51757F501DC4FDD1006B5502 /* AppDelegate.m in Sources */,
+				51757F7F1DC508E4006B5502 /* ar.cc in Sources */,
+				51757F531DC4FDD1006B5502 /* ViewController.mm in Sources */,
+				51757F861DC508F1006B5502 /* renderer.cc in Sources */,
+				51757F851DC508F1006B5502 /* OpenGLView.mm in Sources */,
+				51757F501DC4FDD1006B5502 /* AppDelegate.mm in Sources */,
 				51757F4D1DC4FDD1006B5502 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,8 +556,15 @@
 		};
 		51757F761DC4FDD2006B5502 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2033D1447E2B845855ECC428 /* Pods-FduVision.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K2L6426X8X;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FduVision",
+				);
 				INFOPLIST_FILE = FduVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.kawhi.FduVision;
@@ -433,8 +574,15 @@
 		};
 		51757F771DC4FDD2006B5502 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3080B648F7719CF56F01548 /* Pods-FduVision.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K2L6426X8X;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FduVision",
+				);
 				INFOPLIST_FILE = FduVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.kawhi.FduVision;
@@ -507,6 +655,7 @@
 				51757F771DC4FDD2006B5502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51757F781DC4FDD2006B5502 /* Build configuration list for PBXNativeTarget "FduVisionTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +664,7 @@
 				51757F7A1DC4FDD2006B5502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51757F7B1DC4FDD2006B5502 /* Build configuration list for PBXNativeTarget "FduVisionUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +673,7 @@
 				51757F7D1DC4FDD2006B5502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
