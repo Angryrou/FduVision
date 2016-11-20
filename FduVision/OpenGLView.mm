@@ -12,6 +12,7 @@
 #include "renderer.hpp"
 #include <string>
 #include "AFNetworking.h"
+
 /*
  * Steps to create the key for this sample:
  *  1. login www.easyar.com
@@ -324,13 +325,14 @@ EasyAR::samples::HelloARVideo ar;
         } else {
             NSLog(@"----- Delete Finished -----");
         }
-        
+        NSLog(@"+++++ add_list update ++++");
         for (int i = 0; i < latest_target_num; i ++) {
             auto iter = std::find(_name_list.begin(), _name_list.end(), latest_name_list[i]);
             if(iter == _name_list.end()) {
                 add_list.push_back(i);
             }
         }
+        NSLog(@"+++++ add_list update finished ++++");
         // 加图
         bool netIsOn = true;
         if (add_list.size() != 0) {
@@ -402,13 +404,13 @@ EasyAR::samples::HelloARVideo ar;
 {
     NSArray *targets = [[NSUserDefaults standardUserDefaults] objectForKey:@"targets"];
     if (targets == nil) {
-        _name_list.push_back(std::string("1"));
+        _name_list.push_back(std::string("default"));
         _timestamp_list.push_back(std::string("0"));
         _vurl_list.push_back(std::string("http://www.fudan.edu.cn/download/mofashu/guanghualou.mp4"));
         _target_count = 1;
-        // cp ~/1.jpg $(homeBunder)/Library/Caches/1.jpg
+        // cp ~/Default/default.jpg $(homeBunder)/Library/Caches/default.jpg
         NSError *error;
-        if([[NSFileManager defaultManager] copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"] toPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Library/Caches/1.jpg"] error:&error]) {
+        if([[NSFileManager defaultManager] copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"DefaultContent/default" ofType:@"jpg"] toPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Library/Caches/default.jpg"] error:&error]) {
             NSLog(@"~~~~~ copy jpg succeeded.");
         } else {
             NSLog(@"~~~~~ error is %@", error.description);

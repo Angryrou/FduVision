@@ -28,7 +28,9 @@
 		51757F941DC509F2006B5502 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F931DC509F2006B5502 /* CoreGraphics.framework */; };
 		51757F961DC509F9006B5502 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F951DC509F9006B5502 /* AVFoundation.framework */; };
 		51757F981DC50A17006B5502 /* easyar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51757F971DC50A17006B5502 /* easyar.framework */; };
-		51757F9E1DC50FEE006B5502 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51757F9D1DC50FEE006B5502 /* 1.jpg */; };
+		51F494DC1DE1875000A77A1F /* DefaultContent in Resources */ = {isa = PBXBuildFile; fileRef = 51F494DB1DE1875000A77A1F /* DefaultContent */; };
+		51F494DE1DE1936F00A77A1F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F494DD1DE1936F00A77A1F /* AVKit.framework */; };
+		51F494E01DE197CB00A77A1F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F494DF1DE197CB00A77A1F /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +83,9 @@
 		51757F931DC509F2006B5502 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		51757F951DC509F9006B5502 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		51757F971DC50A17006B5502 /* easyar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = easyar.framework; path = FduVision/easyar.framework; sourceTree = "<group>"; };
-		51757F9D1DC50FEE006B5502 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = SOURCE_ROOT; };
+		51F494DB1DE1875000A77A1F /* DefaultContent */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DefaultContent; sourceTree = "<group>"; };
+		51F494DD1DE1936F00A77A1F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		51F494DF1DE197CB00A77A1F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		CECA11D967990A20F8E1D455 /* libPods-FduVision.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FduVision.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3080B648F7719CF56F01548 /* Pods-FduVision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FduVision.release.xcconfig"; path = "Pods/Target Support Files/Pods-FduVision/Pods-FduVision.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,10 +95,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F494E01DE197CB00A77A1F /* MediaPlayer.framework in Frameworks */,
+				51757F921DC509EB006B5502 /* CoreMedia.framework in Frameworks */,
+				51F494DE1DE1936F00A77A1F /* AVKit.framework in Frameworks */,
 				51757F981DC50A17006B5502 /* easyar.framework in Frameworks */,
 				51757F961DC509F9006B5502 /* AVFoundation.framework in Frameworks */,
 				51757F941DC509F2006B5502 /* CoreGraphics.framework in Frameworks */,
-				51757F921DC509EB006B5502 /* CoreMedia.framework in Frameworks */,
 				51757F901DC509DF006B5502 /* CoreImage.framework in Frameworks */,
 				51757F8E1DC509D6006B5502 /* CoreVideo.framework in Frameworks */,
 				51757F8C1DC509D0006B5502 /* OpenGLES.framework in Frameworks */,
@@ -146,7 +152,7 @@
 		51757F4A1DC4FDD1006B5502 /* FduVision */ = {
 			isa = PBXGroup;
 			children = (
-				51757F9D1DC50FEE006B5502 /* 1.jpg */,
+				51F494DB1DE1875000A77A1F /* DefaultContent */,
 				51757F801DC508F1006B5502 /* ar.hpp */,
 				51757F7E1DC508E4006B5502 /* ar.cc */,
 				51757F841DC508F1006B5502 /* renderer.hpp */,
@@ -204,6 +210,8 @@
 		B54D565762563F5ED2EE111A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51F494DF1DE197CB00A77A1F /* MediaPlayer.framework */,
+				51F494DD1DE1936F00A77A1F /* AVKit.framework */,
 				51757F971DC50A17006B5502 /* easyar.framework */,
 				51757F951DC509F9006B5502 /* AVFoundation.framework */,
 				51757F931DC509F2006B5502 /* CoreGraphics.framework */,
@@ -329,8 +337,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				51757F5B1DC4FDD1006B5502 /* LaunchScreen.storyboard in Resources */,
-				51757F9E1DC50FEE006B5502 /* 1.jpg in Resources */,
 				51757F581DC4FDD1006B5502 /* Assets.xcassets in Resources */,
+				51F494DC1DE1875000A77A1F /* DefaultContent in Resources */,
 				51757F561DC4FDD1006B5502 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

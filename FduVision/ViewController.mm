@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <AVKit/AVKit.h>
+//#import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewController ()
 
@@ -14,9 +17,28 @@
 
 @implementation ViewController
 
+- (void)introMV {
+    NSString *welcomeVideoAFile = [[NSBundle mainBundle] pathForResource:@"DefaultContent/intro" ofType:@"mp4"];
+    NSURL *url = [NSURL fileURLWithPath:welcomeVideoAFile];
+    AVPlayer *player = [AVPlayer playerWithURL:url];
+    AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
+    //set player layer frame and attach it to our view
+    playerLayer.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    playerLayer.masksToBounds = YES;
+    playerLayer.borderColor = [UIColor redColor].CGColor;
+    playerLayer.borderWidth = 0;
+    [self.view.layer addSublayer:playerLayer];
+    //play the video
+    [player play];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    // init add intro.
+    [self introMV];
+    
     // 读数据，并与下载数据比较，进行更新。
     self.glView = [[OpenGLView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.glView];

@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "OpenGLView.h"
+
 @interface ViewController : UIViewController
 
 @property(nonatomic, strong) OpenGLView *glView;
-
 @end
 
