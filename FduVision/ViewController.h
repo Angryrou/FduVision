@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "OpenGLView.h"
+#import <AVFoundation/AVFoundation.h>
+#import <AVKit/AVKit.h>
 
 @interface ViewController : UIViewController
 
 @property(nonatomic, strong) OpenGLView *glView;
+@property(nonatomic, strong) AVPlayerLayer *playerLayer;
 @end
 

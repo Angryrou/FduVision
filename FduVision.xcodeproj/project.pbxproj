@@ -10,7 +10,7 @@
 		509BD401825A06B57DE557B6 /* libPods-FduVision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CECA11D967990A20F8E1D455 /* libPods-FduVision.a */; };
 		51757F4D1DC4FDD1006B5502 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51757F4C1DC4FDD1006B5502 /* main.m */; };
 		51757F501DC4FDD1006B5502 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51757F4F1DC4FDD1006B5502 /* AppDelegate.mm */; };
-		51757F531DC4FDD1006B5502 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51757F521DC4FDD1006B5502 /* ViewController.mm */; };
+		51757F531DC4FDD1006B5502 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51757F521DC4FDD1006B5502 /* ViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		51757F561DC4FDD1006B5502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51757F541DC4FDD1006B5502 /* Main.storyboard */; };
 		51757F581DC4FDD1006B5502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51757F571DC4FDD1006B5502 /* Assets.xcassets */; };
 		51757F5B1DC4FDD1006B5502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51757F591DC4FDD1006B5502 /* LaunchScreen.storyboard */; };
@@ -291,7 +291,7 @@
 		51757F401DC4FDD1006B5502 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Kawhi Lu";
 				TargetAttributes = {
 					51757F471DC4FDD1006B5502 = {
@@ -490,6 +490,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -538,6 +539,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

@@ -230,6 +230,7 @@ EasyAR::samples::HelloARVideo ar;
 }
 
 - (void) loadTargets {
+    NSLog(@"finish preparing pics and urls");
     ar.initGL(_target_count, _name_list, _timestamp_list, _vurl_list);
     [self start];
 }
@@ -343,6 +344,7 @@ EasyAR::samples::HelloARVideo ar;
                 printf(" +++++ add an img named: %s\n", latest_name_list[idx].c_str());
             }
         }
+        
         if (netIsOn) {
             _version = _af_version;
             _target_count = latest_target_num;
@@ -351,6 +353,7 @@ EasyAR::samples::HelloARVideo ar;
             _vurl_list = latest_vurl_list;
             NSLog(@"----- UPDATE SUCCEEDED! -----");
             NSLog(@"Now %d targets", _target_count);
+            
             [self loadTargets];
         } else {
             NSLog(@"----- UPDATE FAILED! -----, error in addition");
